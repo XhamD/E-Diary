@@ -72,6 +72,9 @@ background-image: url('image (4).png');
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+.hidden {
+    display: none;
+}
 img {
     max-width: 100%;
     height: auto;
