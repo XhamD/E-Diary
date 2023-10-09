@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="xlogo.png">
+    <title>E-DIARY</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <nav class="navbar">
+            <h1 class="navbar-title">E-DIARY</h1>
+            <!-- Add an input checkbox to use as the toggle -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <!-- Add a label with a hamburger icon to act as the menu button -->
+            <label for="menu-toggle" class="menu-button">&#9776;</label>
+            <section class="diary-list">
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>             
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </section>
+        </nav>
+            
+        <ul id="entry-list">
+            <!-- Entries will be dynamically loaded here -->
+        </ul>
+    </section>
+    
+    <section class="entry-form">
+        <h2>ADD YOUR ENTRY DIARY</h2>
+        <textarea id="diary-entry" placeholder="Write your diary entry here"></textarea>
+        <button id="save-button">Save</button>
+
+        <h2>SEARCH YOUR DIARY</h2>
+        <button id="search-button">Search</button>
+        <input type="text" id="search-input" placeholder="Search entries">
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

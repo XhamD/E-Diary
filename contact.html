@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="xlogo.png">
+    <title>Contact Us - E-DIARY</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS styles for the Contact Us page */
+        /* Sticky navigation bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            z-index: 100;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        /* ... (Other navigation bar styles) ... */
+
+        /* Style the content section */
+        .content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center; /* Center-align content */
+        }
+
+        /* Style the contact form */
+        .contact-form {
+            text-align: left;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #007BFF;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav class="navbar">
+            <h1 class="navbar-title">E-DIARY</h1>
+            <!-- Add an input checkbox to use as the toggle -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <!-- Add a label with a hamburger icon to act as the menu button -->
+            <label for="menu-toggle" class="menu-button">&#9776;</label>
+            <section class="diary-list">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="#">Contact</a></li>
+                </ul>
+            </section>
+        </nav>
+
+        <section class="content">
+            <h2>Contact Us</h2>
+            
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

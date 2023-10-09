@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    margin-top: 70px;
+background-image: url('image (4).png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100%;
+}
+
+
+
+.navbar-title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0; /* Adjust margins for spacing */
+    color: #FFFFFF; /* Adjust the color as needed */
+    }
+.navbar{
+     position: fixed;
+     
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    z-index : 100px;
+    transition: position 0.3s ease-in-out;
+
+}
+
+
+#navbar.sticky {
+    position: sticky;
+    background-color: #333; /* Customize the background color when sticky if needed */
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.navbar .logo{
+    width: 50px;
+    height: 50px;
+    padding:0px 100px;
+}
+.navbar ul{
+    float: right;
+    margin-right: 30px;
+    margin-top: -77px;
+    padding: 10px ;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 11px;
+    display: inline-block;
+    line-height: 38px;
+
+}
+.navbar ul li a{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 10px 13px;
+    text-decoration: none;
+    transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background:black;
+    border-radius: 10px;
+}
+
+
+main {
+    max-width: 600px;
+border: 10px;
+border-radius: 10px;
+    margin: 0 auto;
+    padding: 80px;
+}
+.entry-form:hover {
+    transform: scale(1.0);
+}
+
+/* Style labels for form elements */
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.entry-form {
+     
+    width: 500px; 
+    padding: 40px;
+     
+     display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    
+    background-color: #f7f7f7;
+    transition: transform 0.3s ease-in-out;}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007BFF;
+}
+
+
+textarea {
+    width: 100%;
+    height: 100px;
+     
+    padding: 10px;
+    resize: none;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    align-items: left;
+    padding: 10px 20px;
+     border-radius: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+.entries {
+    background-color: #fff;
+    padding: 10px;
+    
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #808080;
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: 20;
+    background-color: #C0C0C0;}
+    
+    }
+.menu-toggle {
+    display: none;
+}
+
+/* Style the label (menu button) */
+.menu-button {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+/* Style the navigation menu */
+.diary-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 80px;
+    right: -200px; /* Initially hide the menu off-screen */
+    width: 200px;
+    transition: right 0.3s ease-in-out;
+}
+
+/* Style the individual menu items */
+.diary-list ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.diary-list ul li a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.4s;
+}
+
+/* Show the menu when the checkbox is checked */
+.menu-toggle:checked + .menu-button + .diary-list ul {
+    right: 0;
+}
