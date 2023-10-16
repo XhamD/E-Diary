@@ -16,7 +16,21 @@ body {
         background-size: contain; /* Or adjust as needed */
     }
 }
+.intro-text {
+    color: #fff;
+    text-align: center;
+    opacity: 0; /* Initial opacity set to 0 */
+    animation: fadeIn 2s ease-in-out forwards; /* Apply the fadeIn animation */
+}
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1; /* At the end of the animation, set opacity to 1 */
+    }
+}
 /* Sticky navigation bar */
 .navbar {
     position: fixed;
